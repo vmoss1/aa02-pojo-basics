@@ -10,10 +10,18 @@ console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
 console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple: 1}
 console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 ***********************************************************************/
-
+//? Input - array of strings
+//? Output - object with count of each item in the array
 function arrayConverter(array) {
-  // Your code here 
+ let obj = {};
+ 
+
 }
+
+
+console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
+console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple: 1}
+console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = arrayConverter;
