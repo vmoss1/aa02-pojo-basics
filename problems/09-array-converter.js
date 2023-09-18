@@ -13,9 +13,12 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 //? Input - array of strings
 //? Output - object with count of each item in the array
 function arrayConverter(array) {
- let obj = {};
- 
-
+    let obj = {};
+    for (let word of array){
+        if(obj[word] === undefined) obj[word] = 1;
+        else obj[word] += 1;
+    }
+    return obj;
 }
 
 
