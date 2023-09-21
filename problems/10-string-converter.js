@@ -12,12 +12,14 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 ***********************************************************************/
 
 function stringConverter(string) {
- let obj = {};
- for(let letter of string){
-   if(obj[letter] === undefined) obj[letter] = 1;
-   obj[letter] += 1;
- }
- return obj;
+    let obj = {};
+ for(let letters in string){
+    let letter = string[letters]
+ if(obj[letter] === undefined) obj[letter] = 1;
+ else obj[letter] += 1;
+
+}
+return obj;
 }
 console.log(stringConverter("apple")); // => {a: 1, p: 2, l: 1, e: 1}
 console.log(stringConverter("banana")); // => {b: 1, a: 3, n: 2}

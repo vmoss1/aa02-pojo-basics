@@ -15,7 +15,7 @@ valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
 function valuesInObject(obj) {
-  return Object.values(obj);
+  return Object.values(obj)
 }
 
 let animals = { dog: "Wolfie", cat: "Jet", bison: "Bilbo" };
