@@ -29,15 +29,15 @@ appleCounter(obj3); // => 3
 ***********************************************************************/
 
 function appleCounter(appleObj) {
-  let count = 0;
-   let keys = Object.keys(appleObj);
-   for(let key of keys){
-    key = key.toLowerCase()
-    if(key.indexOf('apple') > -1){
-       count += 1;
+  let keys = Object.keys(appleObj);
+  let countOfApple = 0;
+  for (let word of keys) {
+    word = word.toLowerCase();
+    if (word.indexOf("apple") > -1) {
+      countOfApple += 1;
     }
-   }
-return count;
+  }
+  return countOfApple;
 }
 
 let obj = { banana: "yay!" };
@@ -49,12 +49,11 @@ console.log(appleCounter(obj1)); // => 1
 let obj2 = { crabapple: "yum!", honeyapple: "super yum", banana: "yay" };
 console.log(appleCounter(obj2)); // => 2
 
-
 let obj3 = {
   crabApple: "yum!",
   honeyApple: "super yum",
   banana: "yay",
-  bigapple: "NYC"
+  bigapple: "NYC",
 };
 console.log(appleCounter(obj3)); // => 3
 

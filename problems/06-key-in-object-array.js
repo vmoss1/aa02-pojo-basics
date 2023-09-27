@@ -21,25 +21,25 @@ keyInObjectArray(objArray, 'animal'); // => false
 //? Input: array and a string
 //? Output: return a boolean if the object contains keystring passed in from an argument
 function keyInObjectArray(objArray, keyString) {
-   for (let keys of objArray){
-    let key  = Object.keys(keys)
-    if(key.includes(keyString)){
+  for (let objects of objArray) {
+    let keys = Object.keys(objects);
+    if (keys.includes(keyString)) {
       return true;
     }
-   }
-   return false;
+  }
+  return false;
 }
 
 let objArray = [
   { name: "Rupert" },
   { age: 42 },
-  { planet: "Earth", system: "Milky Way" }
+  { planet: "Earth", system: "Milky Way" },
 ];
 
-console.log(keyInObjectArray(objArray, 'planet')); // => true
-console.log(keyInObjectArray(objArray, 'age')); // => true
-console.log(keyInObjectArray(objArray, 'food')); // => false
-console.log(keyInObjectArray(objArray, 'animal')); // => false
+console.log(keyInObjectArray(objArray, "planet")); // => true
+console.log(keyInObjectArray(objArray, "age")); // => true
+console.log(keyInObjectArray(objArray, "food")); // => false
+console.log(keyInObjectArray(objArray, "animal")); // => false
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keyInObjectArray;
