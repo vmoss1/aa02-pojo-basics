@@ -29,15 +29,15 @@ appleCounter(obj3); // => 3
 ***********************************************************************/
 
 function appleCounter(appleObj) {
+  let counter = 0;
   let keys = Object.keys(appleObj);
-  let countOfApple = 0;
-  for (let word of keys) {
-    word = word.toLowerCase();
-    if (word.indexOf("apple") > -1) {
-      countOfApple += 1;
+  for (let key of keys) {
+    key = key.toLowerCase();
+    if (key.indexOf("apple") > -1) {
+      counter += 1;
     }
   }
-  return countOfApple;
+  return counter;
 }
 
 let obj = { banana: "yay!" };
