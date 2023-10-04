@@ -13,9 +13,10 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 
 function stringConverter(string) {
   let obj = {};
+
   for (let letter of string) {
     if (obj[letter] === undefined) obj[letter] = 1;
-    obj[letter] += 1;
+    else obj[letter] += 1;
   }
   return obj;
 }

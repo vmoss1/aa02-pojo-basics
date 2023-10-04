@@ -12,6 +12,7 @@ keysInObject(animals); // => ["dog", "cat", "bison"]
 keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 //? Return all keys in object
+
 function keysInObject(obj) {
   let keys = Object.keys(obj);
   return keys;
