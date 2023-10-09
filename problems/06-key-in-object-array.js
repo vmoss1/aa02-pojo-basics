@@ -20,9 +20,10 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 //? Input: array and a string
 //? Output: return a boolean if the object contains keystring passed in from an argument
+
 function keyInObjectArray(objArray, keyString) {
-  for (let object of objArray) {
-    let keys = Object.keys(object);
+  for (let obj of objArray) {
+    let keys = Object.keys(obj);
     if (keys.includes(keyString)) {
       return true;
     }

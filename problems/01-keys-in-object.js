@@ -12,11 +12,10 @@ keysInObject(animals); // => ["dog", "cat", "bison"]
 keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 //? Return all keys in object
+//? Input : Object
+//* Output: Array
 
-function keysInObject(obj) {
-  let keys = Object.keys(obj);
-  return keys;
-}
+const keysInObject = (obj) => Object.keys(obj);
 
 let animals = { dog: "Wolfie", cat: "Jet", bison: "Bilbo" };
 let foods = { apple: "tart", lemon: "sour", mango: "sweet" };
