@@ -30,16 +30,16 @@ appleCounter(obj3); // => 3
 // Iterating through the keys of the object
 
 function appleCounter(appleObj) {
-  let counter = 0;
   let keys = Object.keys(appleObj);
+  let appleCounter = 0;
 
-  for (let key of keys) {
+  for (key of keys) {
     key = key.toLowerCase();
     if (key.indexOf("apple") > -1) {
-      counter += 1;
+      appleCounter += 1;
     }
   }
-  return counter;
+  return appleCounter;
 }
 
 let obj = { banana: "yay!" };
